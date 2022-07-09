@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link href="new.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  学号：<br>
+  <input type="text" name="name" placeholder="请输入学号"><br>
+  <!-- 密码框 -->
+  密码：<br>
+  <input type="password" name="ps" placeholder="初始密码为学号后6位"><br>
+  年龄：<br>
+  <!-- 数字输入框，注意 min 和 value 属性-->
+  <input type="number" name="age" min="18" value="18"><br>
+  <!-- 单选按钮, 注意 checked 属性 -->
+  性别：<br>
+  <input type="radio" name="gender" value="male" checked> 男<br>
+  <input type="radio" name="gender" value="female"> 女<br>
+  <input type="radio" name="gender" value="other"> 其它<br>
+  政治面貌：<br>
+  <select name="party">
+    <option value="D">团员</option>
+    <option value="R" selected>党员</option>
+    <option value="N">群众</option>
+  </select><br>
+  可能的返校方式（可多选）：<br>
+  <input type="checkbox" name="vehicle1" value="Train"> 火车<br>
+  <input type="checkbox" name="vehicle2" value="Jet"> 飞机<br>
+  <!-- 日期选择器 -->
+  预计返校时间：<br>
+  <input type="date"><br>
+  <!-- 文件选择器 -->
+  上传健康码近期截图:<br>
+  <input type="file" name="photo"><br>
+  备注：<br>
+  <Input type="text" name="beizhu" placeholder="最少输入一个字"><br>
+  <input type="submit" value="提 交">
+  <input type="reset" value="重 置">
+</form>
+</body>
+</html>
